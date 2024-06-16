@@ -6,8 +6,8 @@ namespace AngryBirdsWinForms
     public static class SystemSettings
     {
         public static int SoundsVolume = 30;
-        public static ResourceManager LocalizationResourceManager { get; private set; } = new ResourceManager($"AngryBirdsWinForms.Languages.Russian", Assembly.GetExecutingAssembly());
-        public static GameLanguageCodes LanguageCode { get; private set; } = GameLanguageCodes.Ru;
+        public static ResourceManager LocalizationResourceManager { get; private set; }
+        public static GameLanguageCodes LanguageCode { get; private set; } = (GameLanguageCodes)Properties.Settings.Default.LastUsedLanguage;
 
         public static void SetLanguages(GameLanguageCodes languageCodes)
         {

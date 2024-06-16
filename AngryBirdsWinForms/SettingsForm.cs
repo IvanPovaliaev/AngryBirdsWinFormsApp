@@ -65,6 +65,8 @@ namespace AngryBirdsWinForms
         private void acceptButton_Click(object sender, EventArgs e)
         {
             SystemSettings.SoundsVolume = volumeValue;
+            Properties.Settings.Default.LastUsedLanguage = (int)SystemSettings.LanguageCode;
+            Properties.Settings.Default.Save();
             WinFormsProvider.OpenChildForm(new GameForm());
         }
         private void cancelButton_Click(object sender, EventArgs e)

@@ -14,6 +14,7 @@ namespace AngryBirdsWinForms
         {
             StaticData.MainForm = this;
             StaticData.ChildFormPanel = childFormPanel;
+            SystemSettings.SetLanguages(SystemSettings.LanguageCode);
             WinFormsProvider.OpenChildForm(new GameForm());
         }
     }

@@ -25,25 +25,13 @@ namespace AngryBirdsWinForms.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string LastUsedLanguage {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int LastUsedLanguage {
             get {
-                return ((string)(this["LastUsedLanguage"]));
+                return ((int)(this["LastUsedLanguage"]));
             }
             set {
                 this["LastUsedLanguage"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool Setting {
-            get {
-                return ((bool)(this["Setting"]));
-            }
-            set {
-                this["Setting"] = value;
             }
         }
     }
