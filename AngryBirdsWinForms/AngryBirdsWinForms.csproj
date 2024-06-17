@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>disable</ImplicitUsings>
+    <ApplicationIcon>AngryBirds_Icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +17,10 @@
     <None Remove="Sounds\AngryBirds_RedThrowSound.wav" />
     <None Remove="Sounds\AngryBirds_SlingshotAiming.wav" />
     <None Remove="Sounds\AngryBirds_SlingshotThrow.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AngryBirds_Icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
